@@ -295,10 +295,10 @@ p.n-margin {
         color: hsl(0, 0%, 100%);
 
         &.alert-info {
-            background-color: hsl(170, 46%, 54%);
+            background-color: hsl(346.9 ,85.7% ,43.9%);
 
             &.red {
-                background-color: hsl(0, 46%, 54%);
+                background-color: hsl(0 ,85.7% ,43.9%)
             }
         }
 
