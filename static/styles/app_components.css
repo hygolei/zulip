@@ -82,7 +82,7 @@ input::placeholder {
         background-color: hsl(0, 0%, 100%);
         color: inherit;
         outline: none;
-        border: 1px solid hsl(0, 0%, 80%);
+        border: 1px solid hsl(346.9,85.7%,43.9%) ;
         border-radius: 2px;
 
         box-shadow: none;
@@ -130,11 +130,11 @@ input::placeholder {
 
         &:hover,
         &:focus {
-            border-color: hsl(0, 0%, 60%);
+            border-color: hsl(346.9,85.7%,43.9%) 
         }
 
         &:active {
-            border-color: hsl(0, 0%, 60%);
+            border-color: hsl(346.9,85.7%,43.9%) ;
             color: inherit;
             background-color: hsl(0, 0%, 95%);
         }
@@ -238,7 +238,8 @@ input::placeholder {
             }
 
             &:not(.selected) {
-                border: 1px solid hsl(0, 0%, 80%);
+                border: 1px solid #D0103A;
+                color: rgb(112, 112, 112);
             }
 
             &.first {
@@ -256,9 +257,9 @@ input::placeholder {
 
             &.selected {
                 position: relative;
-                background-color: hsl(0, 0%, 53%);
+                background-color: #D0103A;
                 color: hsl(0, 0%, 100%);
-                border: 1px solid hsl(0, 0%, 47%);
+                border: 1px solid #D0103A
                 z-index: 2;
             }
 
