@@ -259,7 +259,7 @@ input::placeholder {
                 position: relative;
                 background-color: #D0103A;
                 color: hsl(0, 0%, 100%);
-                border: 1px solid #D0103A
+                border: 1px solid #D0103A;
                 z-index: 2;
             }
 
