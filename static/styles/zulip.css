@@ -37,7 +37,7 @@ html {
 }
 
 body {
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Montserrat";
 }
 
 /* Common background color */
@@ -51,7 +51,7 @@ input,
 button,
 select,
 textarea {
-    font-family: "Source Sans 3", sans-serif;
+    /*font-family: "Source Sans 3", sans-serif;*/
     line-height: normal;
 }
 
@@ -70,7 +70,7 @@ a {
 
 code,
 pre {
-    font-family: "Source Code Pro", monospace;
+    /*font-family: "Source Code Pro", monospace;*/
 }
 
 [data-tippy-root] {
@@ -78,10 +78,10 @@ pre {
      * which have different font-family, we force font-family
      * for tooltips here.
      */
-    font-family: "Source Sans 3", sans-serif !important;
+    /*font-family: "Source Sans 3", sans-serif !important;*/
 
     .tippy-content {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .tippy-arrow::before {
@@ -160,7 +160,7 @@ p.n-margin {
     border-radius: 4px;
     display: none;
     height: 28px;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 auto 12px;
     padding: 5px;
     i {
@@ -220,7 +220,7 @@ p.n-margin {
     }
 
     h3 {
-        font-size: 16pt;
+        font-size: 26px;
         margin-top: 2px;
     }
 
@@ -273,6 +273,8 @@ p.n-margin {
 
 #top_navbar {
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+    background-color: hsl(346.9,85.7%,43.9%);
+    color: #FFF;
 }
 
 #navbar_alerts_wrapper {
@@ -295,7 +297,7 @@ p.n-margin {
         color: hsl(0, 0%, 100%);
 
         &.alert-info {
-            background-color: hsl(346.9 ,85.7% ,43.9%);
+            background-color: #e9a100;
 
             &.red {
                 background-color: hsl(0 ,85.7% ,43.9%)
@@ -351,7 +353,7 @@ p.n-margin {
     margin: 0 auto;
     padding: 0;
     position: relative;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(346.9,85.7%,43.9%);
 }
 
 .fixed-app {
@@ -412,7 +414,7 @@ p.n-margin {
 
 textarea,
 input {
-    font-family: "Source Sans 3", sans-serif;
+    /*font-family: "Source Sans 3", sans-serif;*/
 }
 
 /* Override Bootstrap's fixed sizes for various elements */
@@ -1653,8 +1655,7 @@ div.focused_table {
 }
 
 .top-navbar-border {
-    border-right: 1px solid hsl(0, 0%, 88%);
-    border-left: 1px solid hsl(0, 0%, 88%);
+
 }
 
 .search_icon {
@@ -1874,7 +1875,7 @@ div.focused_table {
         padding-right: 20px;
         border: none;
         border-radius: 0;
-        font-family: "Source Sans 3", sans-serif;
+        /*font-family: "Source Sans 3", sans-serif;*/
         font-weight: 300;
         line-height: $header_height;
     }
@@ -2146,6 +2147,7 @@ nav {
             margin-top: 8px;
             height: 25px;
             max-width: 200px;
+            background-color: hsl(346.9,85.7%,43.9%);
         }
 
         .company-name {
@@ -2156,7 +2158,7 @@ nav {
             margin-left: 8px;
             font-size: 1.2rem;
             font-weight: 600;
-            color: hsl(170, 48%, 54%);
+            color: white;
             letter-spacing: 0.1em;
             cursor: pointer;
         }
@@ -2194,12 +2196,12 @@ div.floating_recipient {
 }
 
 .operator_value {
-    font-family: "Source Code Pro", monospace;
+    /*font-family: "Source Code Pro", monospace;*/
     color: hsl(353, 70%, 65%);
 }
 
 .operator {
-    font-family: "Source Code Pro", monospace;
+    /*font-family: "Source Code Pro", monospace;*/
 }
 
 #loading_older_messages_indicator,
