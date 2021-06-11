@@ -103,6 +103,9 @@ input::placeholder {
 
         &.rounded {
             border-radius: 4px;
+            color: white;
+            background-color: #FECB00;
+            border-color:#FECB00;
         }
 
         &.green {
@@ -140,18 +143,17 @@ input::placeholder {
         }
 
         &.sea-green {
-            color: hsl(156, 41%, 40%);
-            border-color: hsl(156, 28%, 70%);
+            color: white;
+            border-color: hsl(346.9,85.7%,43.9%);
+            background-color: hsl(346.9,85.7%,43.9%);
 
             &:hover,
             &:focus {
-                border-color: hsl(156, 30%, 50%);
+                border-color: hsl(346.9,85.7%,43.9%);
             }
 
             &:active {
-                border-color: hsl(156, 30%, 40%);
-                color: hsl(156, 44%, 43%);
-                background-color: hsl(154, 33%, 96%);
+
             }
         }
 
