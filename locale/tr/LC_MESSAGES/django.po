@@ -2998,7 +2998,7 @@ msgid "Invalid or expired login session."
 msgstr "Geçersiz veya süresi dolmuş giriş oturumu"
 
 #: templates/zerver/login.html:13
-msgid "Log in to Zulip"
+msgid "Log in to CofiChat"
 msgstr "Zulip'e giriş yap"
 
 #: templates/zerver/login.html:61

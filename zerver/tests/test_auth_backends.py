@@ -359,7 +359,7 @@ class AuthBackendTest(ZulipTestCase):
         self.assert_in_response(realm.description, result)
         assert realm.name is not None
         self.assert_in_response(realm.name, result)
-        self.assert_in_response("Log in to Zulip", result)
+        self.assert_in_response("Log in to CofiChat", result)
 
         data = dict(
             description=orjson.dumps("New realm description").decode(),

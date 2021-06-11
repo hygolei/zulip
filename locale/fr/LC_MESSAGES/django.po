@@ -3012,7 +3012,7 @@ msgid "Invalid or expired login session."
 msgstr "Session de connextion non valide ou expirée."
 
 #: templates/zerver/login.html:13
-msgid "Log in to Zulip"
+msgid "Log in to CofiChat"
 msgstr "Se connecter à Zulip"
 
 #: templates/zerver/login.html:61

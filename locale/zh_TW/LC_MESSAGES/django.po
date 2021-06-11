@@ -2996,7 +2996,7 @@ msgid "Invalid or expired login session."
 msgstr "無效或過期的 login session。"
 
 #: templates/zerver/login.html:13
-msgid "Log in to Zulip"
+msgid "Log in to CofiChat"
 msgstr "登入 Zulip"
 
 #: templates/zerver/login.html:61

@@ -3019,7 +3019,7 @@ msgid "Invalid or expired login session."
 msgstr "Ungültige oder abgelaufene Login-Sitzung."
 
 #: templates/zerver/login.html:13
-msgid "Log in to Zulip"
+msgid "Log in to CofiChat"
 msgstr "Bei Zulip anmelden"
 
 #: templates/zerver/login.html:61
