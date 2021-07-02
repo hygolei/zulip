@@ -133,11 +133,11 @@ input::placeholder {
 
         &:hover,
         &:focus {
-            border-color: hsl(346.9,85.7%,43.9%) 
+            border-color: #fecb00
         }
 
         &:active {
-            border-color: hsl(346.9,85.7%,43.9%) ;
+            border-color: #fecb00 ;
             color: inherit;
             background-color: hsl(0, 0%, 95%);
         }

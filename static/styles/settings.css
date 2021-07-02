@@ -1162,9 +1162,9 @@ input[type="checkbox"] {
         }
 
         &.primary {
-            background-color: hsl(156, 30%, 50%);
+            background-color: hsl(346.9,85.7%,43.9%);
             color: hsl(0, 0%, 100%);
-            border: 1px solid hsl(155, 30%, 50%);
+            border: 1px solid hsl(346.9,85.7%,43.9%);
 
             &:hover,
             &:focus {
@@ -1178,8 +1178,8 @@ input[type="checkbox"] {
             }
 
             &.saving {
-                background-color: hsl(156, 14%, 40%);
-                border-color: hsl(156, 14%, 40%);
+                background-color:  #D70076;
+                border-color: #D70076;
             }
         }
 

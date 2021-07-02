@@ -266,14 +266,13 @@ p.n-margin {
     position: fixed;
     z-index: 102; /* Needs to be higher than .alert-bar-container */
     width: 100%;
-    height: $header_height;
+    height: 60px;
     padding-bottom: $header_padding_bottom;
-    background-color: inherit;
+    background-color: hsl(346.9,85.7%,43.9%);
 }
 
 #top_navbar {
-    border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
-    background-color: hsl(346.9,85.7%,43.9%);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.2); 
     color: #FFF;
 }
 
@@ -357,9 +356,9 @@ p.n-margin {
 
 .fixed-app {
     width: 100%;
-    position: fixed;
     z-index: 98;
     left: 0;
+    padding-top: 25px;
 }
 
 .column-right {
@@ -2742,6 +2741,11 @@ select.inline_select_topic_edit {
         height: 40px;
     }
 }
+
+.subsection-changes-discard{
+    background-color: #FECB00;
+}
+
 
 /* This max-width must be synced with message_viewport.is_narrow */
 @media (width < $xl_min) {
