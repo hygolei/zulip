@@ -672,6 +672,7 @@ NO_SCREENSHOT_WEBHOOKS = {
     "ifttt",  # Docs don't have a screenshot
     "slack_incoming",  # Docs don't have a screenshot
     "zapier",  # Docs don't have a screenshot
+    "cofazure",  # Docs don't have a screenshot
 }
 
 
