@@ -327,7 +327,6 @@ WEBHOOK_INTEGRATIONS: List[WebhookIntegration] = [
         display_name="Prometheus Alertmanager",
         logo="images/integrations/logos/prometheus.svg",
     ),
-    WebhookIntegration("cofazure", ["version-control"], display_name="Cof Azure"),
     WebhookIntegration("ansibletower", ["deployment"], display_name="Ansible Tower"),
     WebhookIntegration("appfollow", ["customer-support"], display_name="AppFollow"),
     WebhookIntegration("appveyor", ["continuous-integration"], display_name="AppVeyor"),
@@ -450,6 +449,7 @@ WEBHOOK_INTEGRATIONS: List[WebhookIntegration] = [
     WebhookIntegration("teamcity", ["continuous-integration"]),
     WebhookIntegration("thinkst", ["monitoring"]),
     WebhookIntegration("transifex", ["misc"]),
+    WebhookIntegration("cofazure", ["misc"]),
     WebhookIntegration("travis", ["continuous-integration"], display_name="Travis CI"),
     WebhookIntegration("trello", ["project-management"]),
     WebhookIntegration("updown", ["monitoring"]),
@@ -672,7 +672,6 @@ NO_SCREENSHOT_WEBHOOKS = {
     "ifttt",  # Docs don't have a screenshot
     "slack_incoming",  # Docs don't have a screenshot
     "zapier",  # Docs don't have a screenshot
-    "cofazure",  # Docs don't have a screenshot
 }
 
 

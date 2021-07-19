@@ -74,7 +74,7 @@ EVENT_FUNCTION_MAPPER:Dict[str, Dict[str, Any]] ={
                          "Active": True},
 }
 
-@api_key_only_webhook_view('CofAzure')
+@api_key_only_webhook_view('cofazure')
 @has_request_variables
 def api_cofazure_webhook(
     request: HttpRequest,

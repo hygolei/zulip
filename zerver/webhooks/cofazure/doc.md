@@ -1,6 +1,6 @@
-#cofAzure
+#cofazure
 
-cofAzure é um webhook que permite a integração com os eventos do Azure
+cofazure é um webhook que permite a integração com os eventos do Azure
 
 ##Estrutura
 Este webhook é constituido por três ficheiros essenciais:
