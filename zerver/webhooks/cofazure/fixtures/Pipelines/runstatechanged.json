@@ -1,0 +1,67 @@
+{
+  "id": "62e4351f-1c24-40f9-8510-7af03692ab45",
+  "eventType": "ms.vss-pipelines.run-state-changed-event",
+  "publisherId": "pipelines",
+  "message": {
+    "text": "Run 11 succeeded.",
+    "html": "Run <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11\">11</a> succeeded.",
+    "markdown": "Run [11](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11) succeeded."
+  },
+  "detailedMessage": {
+    "text": "Run 11 succeeded.",
+    "html": "Run <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11\">11</a> succeeded.",
+    "markdown": "Run [11](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11) succeeded."
+  },
+  "resource": {
+    "run": {
+      "_links": {
+        "self": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1/runs/11"
+        },
+        "web": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11"
+        },
+        "pipeline.web": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/definition?definitionId=1"
+        },
+        "pipeline": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1?revision=1"
+        }
+      },
+      "pipeline": {
+        "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/1?revision=1",
+        "id": 11,
+        "revision": 1,
+        "name": "TEST-CI",
+        "folder": "\\"
+      },
+      "state": "completed",
+      "result": "succeeded",
+      "createdDate": "2019-12-13T04:46:13.613Z",
+      "finishedDate": "2019-12-13T04:46:13.613Z",
+      "url": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1/runs/11",
+      "id": 11,
+      "name": "11"
+    },
+    "pipeline": {
+      "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/1?revision=1",
+      "id": 11,
+      "revision": 1,
+      "name": "TEST-CI",
+      "folder": "\\"
+    }
+  },
+  "resourceVersion": "5.1-preview.1",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2019-12-13T04:46:13.683Z"
+}

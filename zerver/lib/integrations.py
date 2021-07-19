@@ -327,6 +327,7 @@ WEBHOOK_INTEGRATIONS: List[WebhookIntegration] = [
         display_name="Prometheus Alertmanager",
         logo="images/integrations/logos/prometheus.svg",
     ),
+    WebhookIntegration("cofazure", ["version-control"], display_name="Cof Azure"),
     WebhookIntegration("ansibletower", ["deployment"], display_name="Ansible Tower"),
     WebhookIntegration("appfollow", ["customer-support"], display_name="AppFollow"),
     WebhookIntegration("appveyor", ["continuous-integration"], display_name="AppVeyor"),

@@ -1,0 +1,65 @@
+{
+  "id": "5810cce3-55e9-46dc-ad4f-681c57cf620e",
+  "eventType": "ms.vss-pipelinechecks-events.approval-completed",
+  "publisherId": "pipelines",
+  "message": {
+    "text": "Approval completed for deployment of pipeline run1 to environment env1.",
+    "html": "Approval completed for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown": "Approval completed for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+  },
+  "detailedMessage": {
+    "text": "Approval completed for deployment of pipeline run1 to environment env1.",
+    "html": "Approval completed for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown": "Approval completed for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+  },
+  "resource": {
+    "approval": {
+      "id": "0f027b05-0942-4a35-9218-26fa07d8760a",
+      "steps": [
+        {
+          "assignedApprover": {
+            "displayName": null,
+            "id": "f8482ec0-3e2f-489b-ba62-ea01cf84afa8"
+          },
+          "status": "approved",
+          "comment": "Sample comment",
+          "initiatedOn": "2019-12-13T06:18:22.460Z"
+        }
+      ],
+      "status": "approved",
+      "createdOn": "2019-12-13T06:18:22.460Z",
+      "lastModifiedOn": "2019-12-13T06:18:22.460Z",
+      "instructions": "Instructions",
+      "minRequiredApprovers": 2,
+      "blockedApprovers": [
+        {
+          "displayName": null,
+          "id": "23241e2e-59af-4b58-842e-5604d508c6b5"
+        }
+      ],
+      "_links": {}
+    },
+    "projectId": "00000000-0000-0000-0000-000000000000",
+    "pipeline": null,
+    "stage": null,
+    "run": null,
+    "resource": null,
+    "id": 0,
+    "url": null,
+    "stageName": null,
+    "attemptId": 0
+  },
+  "resourceVersion": "5.1-preview.1",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2019-12-13T06:18:22.487Z"
+}

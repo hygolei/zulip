@@ -1,0 +1,67 @@
+{
+  "id": "ac1dd6da-af30-43cb-8434-e1005864b0a3",
+  "eventType": "ms.vss-pipelines.stage-state-changed-event",
+  "publisherId": "pipelines",
+  "message": {
+    "text": "Run 2 stage __default succeeded.",
+    "html": "Run 2 stage <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2\">__default</a> succeeded.",
+    "markdown": "Run 2 stage [__default](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2) succeeded."
+  },
+  "detailedMessage": {
+    "text": "Run 2 stage __default succeeded.",
+    "html": "Run 2 stage <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2\">__default</a> succeeded.",
+    "markdown": "Run 2 stage [__default](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2) succeeded."
+  },
+  "resource": {
+    "stage": {
+      "_links": {
+        "web": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2"
+        },
+        "pipeline.web": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/definition?definitionId=2"
+        }
+      },
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "__default",
+      "displayName": null,
+      "state": "completed",
+      "result": "succeeded"
+    },
+    "run": {
+      "pipeline": {
+        "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
+        "id": 2,
+        "revision": 2,
+        "name": "TEST-CI",
+        "folder": "\\"
+      },
+      "state": "completed",
+      "result": "succeeded",
+      "createdDate": "2019-12-13T06:10:10.164Z",
+      "finishedDate": "2019-12-13T06:10:10.164Z",
+      "id": 2,
+      "name": "2"
+    },
+    "pipeline": {
+      "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
+      "id": 2,
+      "revision": 2,
+      "name": "TEST-CI",
+      "folder": "\\"
+    }
+  },
+  "resourceVersion": "5.1-preview.1",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2019-12-13T06:10:10.186Z"
+}
