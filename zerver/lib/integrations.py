@@ -676,6 +676,7 @@ NO_SCREENSHOT_WEBHOOKS = {
 
 
 DOC_SCREENSHOT_CONFIG: Dict[str, List[BaseScreenshotConfig]] = {
+    "cofazure": [ScreenshotConfig("cofazure.json")],
     "airbrake": [ScreenshotConfig("error_message.json")],
     "alertmanager": [
         ScreenshotConfig("alert.json", extra_params={"name": "topic", "desc": "description"})
