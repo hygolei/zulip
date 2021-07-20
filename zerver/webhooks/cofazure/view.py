@@ -1,7 +1,7 @@
 from typing import Any, Callable, Dict, Iterable
 
 from django.http import HttpRequest, HttpResponse
-from zerver.decorator import log_exception_to_webhook_logger, api_key_only_webhook_view
+from zerver.decorator import log_exception_to_webhook_logger, webhook_view
 from zerver.lib.request import REQ, has_request_variables
 from zerver.lib.response import json_success
 from zerver.lib.webhooks.common import check_send_webhook_message
@@ -74,7 +74,7 @@ EVENT_FUNCTION_MAPPER:Dict[str, Dict[str, Any]] ={
                          "Active": True},
 }
 
-@api_key_only_webhook_view('cofazure')
+@webhook_view('cofazure')
 @has_request_variables
 def api_cofazure_webhook(
     request: HttpRequest,
