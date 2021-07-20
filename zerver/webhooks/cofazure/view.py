@@ -6,7 +6,7 @@ from zerver.lib.request import REQ, has_request_variables
 from zerver.lib.response import json_success
 from zerver.lib.webhooks.common import check_send_webhook_message
 from zerver.models import UserProfile
-import bodyfunctions as bf
+from lib import bodyfunctions as bf
 
 
 class Helper:
