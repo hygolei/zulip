@@ -6,8 +6,10 @@ from zerver.lib.request import REQ, has_request_variables
 from zerver.lib.response import json_success
 from zerver.lib.webhooks.common import check_send_webhook_message
 from zerver.models import UserProfile
-from zerver.lib.webhooks.bodyfunctions import * as bf
-
+from zerver.lib.webhooks.bodyfunctions import BuildandRelease as br
+from zerver.lib.webhooks.bodyfunctions import code as cd
+from zerver.lib.webhooks.bodyfunctions import pipelines as pl
+from zerver.lib.webhooks.bodyfunctions import workitems as wk
 
 class Helper:
     def __init__(
@@ -32,45 +34,45 @@ A cada eventtype está a associada uma função que devolve o body e o topic da 
 As funcoes encontram-se num outro ficheiro chamado bodyfunctions
 """
 EVENT_FUNCTION_MAPPER:Dict[str, Dict[str, Any]] ={
-    "ms.vss-release.deployment-started-event": {"Function":bf.BuildandRelease.release_deployment_started_body,
+    "ms.vss-release.deployment-started-event": {"Function":br.release_deployment_started_body,
                                                 "Active":True},
-    "build.complete": {"Function": bf.BuildandRelease.build_completed_body,
+    "build.complete": {"Function": br.build_completed_body,
                        "Active": True},
-    "ms.vss-release.release-abandoned-event": {"Function": bf.BuildandRelease.release_abandoned_body,
+    "ms.vss-release.release-abandoned-event": {"Function": br.release_abandoned_body,
                                                "Active": True},
-    "ms.vss-release.release-created-event": {"Function": bf.BuildandRelease.release_created_body,
+    "ms.vss-release.release-created-event": {"Function": br.release_created_body,
                                              "Active": True},
-    "ms.vss-release.deployment-approval-completed-event": {"Function": bf.BuildandRelease.release_deployment_approval_completed_body,
+    "ms.vss-release.deployment-approval-completed-event": {"Function": br.release_deployment_approval_completed_body,
                                                            "Active": True},
-    "ms.vss-release.deployment-approval-pending-event": {"Function": bf.BuildandRelease.release_deployment_approval_pending_body,
+    "ms.vss-release.deployment-approval-pending-event": {"Function": br.release_deployment_approval_pending_body,
                                                          "Active": True},
-    "git.pullrequest.merged": {"Function": bf.code.pull_request_merged_body,
+    "git.pullrequest.merged": {"Function": cd.pull_request_merged_body,
                                "Active": True},
-    "git.pullrequest.updated": {"Function": bf.code.pull_request_updated_body,
+    "git.pullrequest.updated": {"Function": cd.pull_request_updated_body,
                                 "Active": True},
-    "tfvc.checkin": {"Function": bf.code.checkin_body,
+    "tfvc.checkin": {"Function": cd.checkin_body,
                      "Active": True},
-    "git.push": {"Function": bf.code.push_body(),
+    "git.push": {"Function": cd.push_body(),
                  "Active": True},
-    "git.pullrequest.created": {"Function": bf.code.pull_request_created_body(),
+    "git.pullrequest.created": {"Function": cd.pull_request_created_body(),
                                 "Active": True},
-    "ms.vss-pipelines.run-state-changed-event": {"Function": bf.pipelines.run_state_changed_body,
+    "ms.vss-pipelines.run-state-changed-event": {"Function": pl.run_state_changed_body,
                                                  "Active": True},
-    "ms.vss-pipelinechecks-events.approval-completed": {"Function": bf.pipelines.run_stage_approval_completed_body,
+    "ms.vss-pipelinechecks-events.approval-completed": {"Function": pl.run_stage_approval_completed_body,
                                                         "Active": True},
-    "ms.vss-pipelinechecks-events.approval-pending": {"Function": bf.pipelines.run_stage_waiting_for_approval_body,
+    "ms.vss-pipelinechecks-events.approval-pending": {"Function": pl.run_stage_waiting_for_approval_body,
                                                       "Active": True},
-    "ms.vss-pipelines.stage-state-changed-event": {"Function": bf.pipelines.run_stage_state_changed_body,
+    "ms.vss-pipelines.stage-state-changed-event": {"Function": pl.run_stage_state_changed_body,
                                                    "Active": True},
-    "workitem.restored": {"Function": bf.workitems.work_item_restored_body,
+    "workitem.restored": {"Function": wk.work_item_restored_body,
                           "Active": True},
-    "workitem.updated": {"Function": bf.workitems.work_item_updated_body,
+    "workitem.updated": {"Function": wk.work_item_updated_body,
                          "Active": True},
-    "workitem.commented": {"Function": bf.workitems.work_item_commented_body,
+    "workitem.commented": {"Function": wk.work_item_commented_body,
                            "Active": True},
-    "workitem.created": {"Function": bf.workitems.work_item_created_body,
+    "workitem.created": {"Function": wk.work_item_created_body,
                          "Active": True},
-    "workitem.deleted": {"Function": bf.workitems.work_item_deleted_body,
+    "workitem.deleted": {"Function": wk.work_item_deleted_body,
                          "Active": True},
 }
 
