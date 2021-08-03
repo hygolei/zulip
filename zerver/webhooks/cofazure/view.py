@@ -14,11 +14,9 @@ from zerver.lib.webhooks.bodyfunctions import pipelines as pl
 from zerver.lib.webhooks.bodyfunctions import workitems as wk
 
 """
-"""
 Mapeamento do eventtype devolvido pelo GIT
 A cada eventtype está a associada uma função que devolve o body e o topic da mensagem a publicar
 As funcoes encontram-se num outro ficheiro chamado bodyfunctions
-"""
 """
 EVENT_FUNCTION_MAPPER:Dict[str, Dict[str, Any]] ={
     "ms.vss-release.deployment-started-event": {"Function":br.release_deployment_started_body,
