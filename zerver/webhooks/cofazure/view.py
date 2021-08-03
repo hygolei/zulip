@@ -58,7 +58,7 @@ EVENT_FUNCTION_MAPPER:Dict[str, Dict[str, Any]] ={
     "workitem.created": {"Function": wk.work_item_created_body,
                          "Active": True},
     "workitem.deleted": {"Function": wk.work_item_deleted_body,
-                         "Active": True},
+                         "Active": True}
 }
 
 @webhook_view('CofAzure')
@@ -69,14 +69,14 @@ def api_cofazure_webhook(
         payload: Dict[str, Iterable[Dict[str, Any]]]=REQ(argument_type='body'),
 ) -> HttpResponse:
 
-    event = payload["eventType"]
+    event = payload['eventType']
     
     if event is None:
             # Helper.log_unsupported(event)
             return json_success()
 
     # Retira a função a executrar da lista configurada mais acima
-    body_function = EVENT_FUNCTION_MAPPER[event]["Functions"]
+    body_function = EVENT_FUNCTION_MAPPER[event]['Functions']
 
     
     # construct the body of the message
