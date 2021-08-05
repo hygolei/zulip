@@ -440,7 +440,7 @@ on a dark background, and don't change the dark labels dark either. */
 
     #streamlist-toggle,
     #userlist-toggle {
-        color: inherit;
+        color: hsl(346.9,85.7%,43.9%);
         border-color: hsla(0, 0%, 0%, 0.6);
     }
 
