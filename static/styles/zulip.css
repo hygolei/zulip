@@ -1,7 +1,7 @@
 /*
 This is the header, aka the navbar.
 */
-$header_height: 40px;
+$header_height: 70px;
 
 /*
 We have a 10px gutter below the header,
@@ -265,8 +265,7 @@ p.n-margin {
 .header {
     position: fixed;
     z-index: 102; /* Needs to be higher than .alert-bar-container */
-    width: 100%;
-    height: 60px;
+    width: 100%;/*height: 60px;*/
     padding-bottom: $header_padding_bottom;
     background-color: hsl(346.9,85.7%,43.9%);
 }
