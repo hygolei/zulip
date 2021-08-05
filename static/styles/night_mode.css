@@ -77,7 +77,7 @@ body.night-mode {
     #subscription_overlay .right,
     #settings_page .form-sidebar,
     #settings_page .right {
-        background-color: hsl(212, 28%, 18%);
+        /*background-color: hsl(212, 28%, 18%);*/
     }
 
     #compose_buttons
