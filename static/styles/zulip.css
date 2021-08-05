@@ -43,7 +43,7 @@ body {
 /* Common background color */
 body,
 #message_view_header_underpadding {
-    background-color: hsl(0, 0%, 100%);
+    /* background-color: hsl(0, 0%, 100%); */
     transition: background-color 200ms linear;
 }
 
